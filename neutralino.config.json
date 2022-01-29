@@ -11,11 +11,12 @@
   },
   "nativeBlockList": [],
   "globalVariables": {
-    "TEST": "Test Value"
+    "TEST": "Test Value",
+    "ENVIRONMENT": "development"
   },
   "modes": {
     "window": {
-      "title": "twitch-plays",
+      "title": "neutralinojs-react-tailwind-template",
       "width": 800,
       "height": 500,
       "minWidth": 400,
@@ -23,7 +24,7 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/resources/icons/appIcon.png",
-      "enableInspector": true,
+      "enableInspector": false,
       "borderless": false,
       "maximize": false,
       "hidden": false,
@@ -32,7 +33,8 @@
     },
     "browser": {
       "globalVariables": {
-        "TEST": "Test value browser"
+        "TEST": "Test value browser",
+        "ENVIRONMENT": "development"
       },
       "nativeBlockList": [
         "filesystem.*"
@@ -46,7 +48,7 @@
     }
   },
   "cli": {
-    "binaryName": "twitch-plays",
+    "binaryName": "neutralinojs-react-tailwind-template",
     "resourcesPath": "/resources/",
     "clientLibrary": "/resources/js/neutralino.js",
     "binaryVersion": "3.0.0",
