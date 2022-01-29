@@ -3,14 +3,19 @@
 git clone git@github.com:maael/neutralinojs-react-tailwind-template.git
 cd neutralinojs-react-tailwind-template
 npm i
+neu update
 npm run dev
 ```
 
-The simplest template for a Neutralinojs app. It's possible to use your favorite frontend framework using the following steps.
+# Features
 
-- Create a new project using your favorite frontend framework. (Eg: `ng new --directory .`)
-- Make the frontend framework's build path and Neutralino config's `url`, `resourcesPath` the same.
-- Build with the correct base href.
+- Neutralino.js
+- React
+- Tailwind
+
+All with hot reload, as parallel processes. Build will also purge the unused Tailwind, to keep sizes minimal.
+
+Probably the best way to add different screens is something like `react-router`.
 
 # Icon credits
 

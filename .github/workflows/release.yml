@@ -36,3 +36,4 @@ jobs:
         with:
           artifacts: "./dist/${{ github.event.repository.name }}.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
