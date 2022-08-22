@@ -1,6 +1,7 @@
 {
   "applicationId": "js.neutralino.sample",
   "defaultMode": "window",
+  "version": "1.0.0",
   "port": 0,
   "url": "/resources/",
   "enableServer": true,
@@ -12,7 +13,8 @@
   "nativeBlockList": [],
   "globalVariables": {
     "TEST": "Test Value",
-    "ENVIRONMENT": "development"
+    "ENVIRONMENT": "development",
+    "APP_VERSION": "1.0.0"
   },
   "modes": {
     "window": {
@@ -23,18 +25,19 @@
       "minHeight": 200,
       "fullScreen": false,
       "alwaysOnTop": false,
-      "icon": "/resources/icons/appIcon.png",
       "enableInspector": false,
+      "icon": "/resources/icons/appIcon.png",
       "borderless": false,
       "maximize": false,
       "hidden": false,
       "resizable": true,
-      "exitProcessOnClose": false
+      "exitProcessOnClose": true
     },
     "browser": {
       "globalVariables": {
         "TEST": "Test value browser",
-        "ENVIRONMENT": "development"
+        "ENVIRONMENT": "development",
+        "APP_VERSION": "1.0.0"
       },
       "nativeBlockList": [
         "filesystem.*"
@@ -51,7 +54,7 @@
     "binaryName": "neutralinojs-react-tailwind-template",
     "resourcesPath": "/resources/",
     "clientLibrary": "/resources/js/neutralino.js",
-    "binaryVersion": "3.0.0",
+    "binaryVersion": "4.7.0",
     "clientVersion": "2.0.0"
   }
 }
