@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import App from './App'
 
-Neutralino.events.on("ready", () => {
-  ReactDom.render(<div className='text-red-400'>Testing</div>, document.querySelector('#app'))
-});
+Neutralino.init()
+
+Neutralino.events.on('ready', () => {
+  ReactDom.render(<App />, document.querySelector('#app'))
+})

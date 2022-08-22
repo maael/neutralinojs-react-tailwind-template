@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-#neutralinoapp {
-    text-align: center;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: default;
+html,
+body {
+    height: 100%;
 }
 
-#neutralinoapp h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+body {
+    @apply bg-gray-800 text-white flex flex-col;
 }
 
-#neutralinoapp > div {
-    font-size: 16px;
-    font-weight: normal;
+#app {
+    @apply flex flex-col flex-1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
 }
